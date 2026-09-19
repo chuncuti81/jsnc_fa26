@@ -1,3 +1,5 @@
+console.log("Lab2");
+console.log("Bai1");
 const names = ["An", "Bình", "Nam", "Hòa", "Lan"];
 console.log(names);
 console.log("Phần tử đầu tiên: ", names[0]);

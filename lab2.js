@@ -13,4 +13,5 @@ console.log("sau thay đổi", students);
 
 // for
 for (let i = 0; i < students.length; i++){
+    console.log(students[i]);
 }
