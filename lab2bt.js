@@ -39,3 +39,61 @@ for(i = 0; i < students.length; i++){
     console.log(students[i].name);
 }
 
+
+console.log("Bài 5");
+let html = document.getElementById("students");
+let content = "";
+for (let i = 0; i < students.length; i ++){
+    content += `
+    <div>
+        <h3>${students[i].name}</h3>
+        <h5>Tuổi: ${students[i].age}</h5>
+    </div>
+    `;
+}
+html.innerHTML = content;
+
+console.log(html);
+
+console.log("Bài tổng hợp");
+const products = [
+  {
+    id: 1,
+    name: "iPhone 15",
+    price: 20000000,
+  },
+  {
+    id: 2,
+    name: "Samsung Galaxy S24",
+    price: 18000000,
+  },
+  {
+    id: 3,
+    name: "Xiaomi 14",
+    price: 12000000,
+  },
+];
+console.log(products);
+for (let i = 0; i < products.length; i++){
+    console.log(products[i].name, "-", products[i].price);
+}
+let tong = 0
+for (let i = 0; i < products.length; i ++){
+    tong += products[i].price;
+}
+console.log("Tong: " + tong);
+html = document.getElementById("products");
+content = "";
+for (let i = 0; i < products.length; i ++){
+    content += `
+    <div>
+        <h3>${products[i].name}</h3>
+        <h5>Gia: ${products[i].price}</h5>
+    </div>
+    `;
+}
+html.innerHTML = content;
+
+console.log(html);
+
+
