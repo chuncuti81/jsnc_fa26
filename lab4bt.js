@@ -18,7 +18,8 @@ document.getElementById("list").innerHTML = res.data
                     Sửa
                   </a>
 
-                  <button
+                  <button 
+                    onclick = deleteProducts(${item.id})
                     class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
                   >
                     Xóa
@@ -30,4 +31,20 @@ document.getElementById("list").innerHTML = res.data
   )
   .join("");
 });
+
+function deleteProducts(id){
+  const result = confirm("Xóa hay ko");
+  console.log(result);
+  if (result) {
+  axios
+    .delete(`http://localhost:3000/products/${id}`)
+    .then(() => {
+    alert("Xóa thành công");
+    })
+    .catch(() => {
+    alert("Xóa thất bại");
+    })
+  }
+}
+
 
