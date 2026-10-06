@@ -21,16 +21,22 @@
   ],
   "products": [
     {
-      "id": 1,
-      "name": "iPhone 15",
-      "price": 25000000,
-      "category": "Điện thoại"
+      "name": "Iphone 16 Pro",
+      "price": "25000000",
+      "category": "25000000",
+      "id": 1
     },
     {
       "id": 2,
       "name": "Samsung S25",
       "price": 22000000,
       "category": "Điện thoại"
+    },
+    {
+      "name": "Iphone 17 ProMax",
+      "price": "3500000",
+      "category": "Điện thoại",
+      "id": 3
     }
   ]
 }

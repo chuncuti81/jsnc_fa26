@@ -12,7 +12,7 @@ document.getElementById("list").innerHTML = res.data
               <td class="px-4 py-2 border border-gray-300">
                 <div class="flex items-center justify-center gap-2">
                   <a
-                    href="#"
+                    href="./edit.html?id=${item.id}"
                     class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
                   >
                     Sửa
