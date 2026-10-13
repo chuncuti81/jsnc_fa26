@@ -22,6 +22,10 @@
     </nav>
     <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
       <h1 id="title" class="text-2xl font-semibold mb-6">Danh sách</h1>
+      <form action="">
+        <input type="text" id = "search" placeholder="Tìm kiếm sản phẩm">
+        <button type="submit">Tìm kiếm</button>
+      </form> 
       <div id="app"></div>
       <div class="overflow-x-auto">
         <table class="w-full border border-gray-300 rounded-lg">
@@ -31,12 +35,13 @@
               <th class="px-4 py-2 border border-gray-300">ID</th>
               <th class="px-4 py-2 border border-gray-300">Name</th>
               <th class="px-4 py-2 border border-gray-300">price</th>
-              <th class="px-4 py-2 border border-gray-300">Danh mục</th>
+              <th class="px-4 py-2 border border-gray-300">category</th>
               <th class="px-4 py-2 border border-gray-300">Thao tác</th>
             </tr>
           </thead>
 
           <tbody id="list"></tbody>
+
         </table>
       </div>
     </div>
